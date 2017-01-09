@@ -42,14 +42,14 @@ def first_name
     names.each do |name|
       puts name[0]
     end
-  p names.to_h
 end
 
 def to_hash
-  names = data.map do |name, age| 
-    {age=>name}
+  full_data = data.each {|data| data[0][0]}
+  names_hash = full_data.group_by do |name, age| 
+    age
     end
-    p names
+    p names_hash
 end
 
 def output_capital_from_state(state)
@@ -90,8 +90,8 @@ def word_score
 end
 
 
-# Collection.new.first_name
-# Collection.new.to_hash
+Collection.new.first_name
+Collection.new.to_hash
 # Collection.new.letter_score
 # Collection.new.letter_score_v2
 # Collection.new.word_score
