@@ -96,7 +96,7 @@ end
 # Collection.new.letter_score_v2
 # Collection.new.word_score
 # Collection.new.output_capital_from_state("Colorado")
-Collection.new.output_state_from_capital("Denver")
+# Collection.new.output_state_from_capital("Denver")
 
 
 end
